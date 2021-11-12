@@ -76,7 +76,6 @@ public class TC_OMF_PersonalLoanCalcTest {
         String expRepayment = "R1 656.43 - R1 810.05";
         String actRepayment = driver.findElement(By.xpath("//strong[contains(., 'R1 656.43 - R1 810.05')]")).getText();
         Assert.assertEquals("Verify monthly repayment: ",expRepayment,actRepayment);
-        driver.findElement(By.id("//strong[contains(., 'R1 656.43 - R1 810.05')]")).click();
         baseClass.CaptureScreenshot(driver,"validateRepaymentAmount");
     }
 
